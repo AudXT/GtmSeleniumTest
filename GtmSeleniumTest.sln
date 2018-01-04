@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtmSeleniumFramework", "GtmSeleniumTest\GtmSeleniumFramework.csproj", "{96E13298-2CF6-4FA4-8A42-03D47E8D5CB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtmTestCases", "GtmTestCases\GtmTestCases.csproj", "{53B67F2B-77E3-4560-A5D3-8AAC89B3E68D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96E13298-2CF6-4FA4-8A42-03D47E8D5CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96E13298-2CF6-4FA4-8A42-03D47E8D5CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96E13298-2CF6-4FA4-8A42-03D47E8D5CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96E13298-2CF6-4FA4-8A42-03D47E8D5CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B67F2B-77E3-4560-A5D3-8AAC89B3E68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B67F2B-77E3-4560-A5D3-8AAC89B3E68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B67F2B-77E3-4560-A5D3-8AAC89B3E68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B67F2B-77E3-4560-A5D3-8AAC89B3E68D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7787BDCB-E5AC-45AA-9FBB-0F8B38A3708E}
+	EndGlobalSection
+EndGlobal
