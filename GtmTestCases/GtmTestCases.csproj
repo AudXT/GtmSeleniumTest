@@ -49,6 +49,7 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account Section TP 20299\Login_20357.cs" />
     <Compile Include="Smoke\BlankItemNewAccount.cs" />
     <Compile Include="CheerleadingPageTest.cs" />
     <Compile Include="TestBase.cs" />

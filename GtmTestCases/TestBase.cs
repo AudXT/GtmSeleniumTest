@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Text;
 using GtmSeleniumTest.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -24,13 +26,18 @@ namespace GtmSeleniumTest
         //            throw new NotImplementedException("Use case not yet supported");
         //    }
         //}
-        //[TestInitialize]
-        //public void setupTest()
-        //{
-        //    Browser.StartUp();
-        //}
 
-        public static void RunTestWithExceptionHandling(Action action)
+        public List<TestAsserts> Asserts;
+        public StringBuilder FailStrings;
+
+        [TestInitialize]
+        public void setupTest()
+        {
+            Asserts = new List<TestAsserts>();
+            FailStrings = new StringBuilder();
+        }
+
+        public void RunTestWithExceptionHandling(Action action)
         {
             try
             {

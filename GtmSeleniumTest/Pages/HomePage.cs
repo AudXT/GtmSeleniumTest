@@ -9,7 +9,7 @@ namespace GtmSeleniumFramework.Pages
     {
         public HomePage()
         {
-            Url = "http://test.gtmsportswear.com";
+            Url = "http://gtmsportswear.com";
 
             PageTitle = "Warm Ups, Uniforms, Custom Jerseys, Tees, Embroidery | GTM Sportswear";
         }

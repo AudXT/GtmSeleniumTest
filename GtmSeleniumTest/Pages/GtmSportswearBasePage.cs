@@ -23,6 +23,9 @@ namespace GtmSeleniumTest.Pages
         [FindsBy(How = How.CssSelector, Using = "#ctl00_ContentPlaceHolder1_divCategoryContainer > div:nth-child(1) > article > h1")]
         private IWebElement header;
 
+        [FindsBy(How = How.Id, Using = "ctl00_lblAccountName")]
+        private IWebElement loginBtn;
+
         public string Header
         {
             get { return header.Text; }
@@ -54,6 +57,8 @@ namespace GtmSeleniumTest.Pages
         {
             Browser.Goto(Url);
         }
+
+        public void GotoLogin() => loginBtn.Click();
     }
 
     public class GtmToolBar

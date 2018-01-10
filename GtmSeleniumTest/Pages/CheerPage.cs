@@ -4,7 +4,7 @@ using OpenQA.Selenium.Support.PageObjects;
 
 namespace GtmSeleniumFramework.Pages
 {
-    public class CheerPage
+    public class CheerPage : GtmSportswearBasePage
     {
 
         public bool IsAtCheerleading()

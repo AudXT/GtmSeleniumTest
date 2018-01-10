@@ -60,13 +60,13 @@ namespace GtmSeleniumFramework.Pages
             }
         }
 
-        public static CheckoutPage CheckoutPage
+        public static LoginPage LoginPage
         {
             get
             {
-                var checkoutPage = new CheckoutPage();
-                PageFactory.InitElements(Browser.Driver, checkoutPage);
-                return checkoutPage;
+                var loginPage = new LoginPage();
+                PageFactory.InitElements(Browser.Driver, loginPage);
+                return loginPage;
             }
         }
     }

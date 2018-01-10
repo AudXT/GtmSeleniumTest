@@ -10,12 +10,12 @@ namespace GtmTestCases
     public class BlankItemNewAccount : TestBase
     {
         //[TestMethod]
-        //public void ST_003()
+        //public void ST_01()
         //{
         //    RunTestWithExceptionHandling(DoTestProcedure);
         //}
         [TestMethod]
-        public void ST_003()
+        public void ST_01()
         {
             //Go to the home page and search for something (Tagless shirt)
             Pages.HomePage.Goto();
@@ -32,28 +32,28 @@ namespace GtmTestCases
             Pages.CartPage.Checkout();
 
             //Verify > No errors are present at login screen
-            Assert.IsFalse(Pages.CheckoutPage.NewCustomerCheckError("First Name"), "First Name error is present");
-            Assert.IsFalse(Pages.CheckoutPage.NewCustomerCheckError("Last Name"), "Last name error is present");
-            Assert.IsFalse(Pages.CheckoutPage.NewCustomerCheckError("E-Mail Address"), "Email error is present");
-            Assert.IsFalse(Pages.CheckoutPage.NewCustomerCheckError("Password"), "Password error is present");
-            Assert.IsFalse(Pages.CheckoutPage.NewCustomerCheckError("Confirm Password"), "Confirm Password error is present");
+            Assert.IsFalse(Pages.LoginPage.NewCustomerCheckError("First Name"), "First Name error is present");
+            Assert.IsFalse(Pages.LoginPage.NewCustomerCheckError("Last Name"), "Last name error is present");
+            Assert.IsFalse(Pages.LoginPage.NewCustomerCheckError("E-Mail Address"), "Email error is present");
+            Assert.IsFalse(Pages.LoginPage.NewCustomerCheckError("Password"), "Password error is present");
+            Assert.IsFalse(Pages.LoginPage.NewCustomerCheckError("Confirm Password"), "Confirm Password error is present");
 
             //Attempt to register for account without putting any information
-            Pages.CheckoutPage.Register();
+            Pages.LoginPage.Register();
 
             //Verify errors show up
-            Assert.IsTrue(Pages.CheckoutPage.NewCustomerCheckError("First Name"), "First Name error is not present");
-            Assert.IsTrue(Pages.CheckoutPage.NewCustomerCheckError("Last Name"), "Last name error is not present");
-            Assert.IsTrue(Pages.CheckoutPage.NewCustomerCheckError("E-Mail Address"), "Email error is not present");
-            Assert.IsTrue(Pages.CheckoutPage.NewCustomerCheckError("Password"), "Password error is not present");
-            Assert.IsTrue(Pages.CheckoutPage.NewCustomerCheckError("Confirm Password"), "Confirm Password error is not present");
+            Assert.IsTrue(Pages.LoginPage.NewCustomerCheckError("First Name"), "First Name error is not present");
+            Assert.IsTrue(Pages.LoginPage.NewCustomerCheckError("Last Name"), "Last name error is not present");
+            Assert.IsTrue(Pages.LoginPage.NewCustomerCheckError("E-Mail Address"), "Email error is not present");
+            Assert.IsTrue(Pages.LoginPage.NewCustomerCheckError("Password"), "Password error is not present");
+            Assert.IsTrue(Pages.LoginPage.NewCustomerCheckError("Confirm Password"), "Confirm Password error is not present");
 
             //Fill out information with dummy info
-            Pages.CheckoutPage.FillFirstName("Test");
-            Pages.CheckoutPage.FillLastName("Test");
-            Pages.CheckoutPage.FillEmail("Test@test.com");
-            Pages.CheckoutPage.FillPassword("Testtest1");
-            Pages.CheckoutPage.FillPasswordConfirm("Testtest1");
+            Pages.LoginPage.FillFirstName("Test");
+            Pages.LoginPage.FillLastName("Test");
+            Pages.LoginPage.FillEmailNew($"Test{DateTime.Now.ToString()}@test.com");
+            Pages.LoginPage.FillPasswordNew("Testtest1");
+            Pages.LoginPage.FillPasswordConfirm("Testtest1");
 
         }
     }
