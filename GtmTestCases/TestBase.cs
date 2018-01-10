@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using GtmSeleniumTest.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -26,7 +27,7 @@ namespace GtmSeleniumTest
         //[TestInitialize]
         //public void setupTest()
         //{
-        //    browser.StartUp();
+        //    Browser.StartUp();
         //}
 
         public static void RunTestWithExceptionHandling(Action action)

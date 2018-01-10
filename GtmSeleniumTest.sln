@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtmSeleniumFramework", "Gtm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtmTestCases", "GtmTestCases\GtmTestCases.csproj", "{53B67F2B-77E3-4560-A5D3-8AAC89B3E68D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D57C6C1-9BDF-41A2-A377-ABD3E99A3C15}"
+	ProjectSection(SolutionItems) = preProject
+		startSelenium.bat = startSelenium.bat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

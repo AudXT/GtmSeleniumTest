@@ -5,31 +5,13 @@ using System;
 
 namespace GtmSeleniumFramework.Pages
 {
-    public class HomePage
+    public class HomePage : GtmSportswearBasePage
     {
-        static string Url = "http://gtmsportswear.com";
-
-        static string PageTitle = "Warm Ups, Uniforms, Custom Jerseys, Tees, Embroidery | GTM Sportswear";
-
-        [FindsBy(How = How.LinkText, Using = "Cheerleading")]
-        private IWebElement cheerleading;
-
-        public void Goto()
+        public HomePage()
         {
-            Browser.Goto(Url);
-        }
+            Url = "http://test.gtmsportswear.com";
 
-        public bool IsAt()
-        {
-            return Browser.Title == PageTitle;
+            PageTitle = "Warm Ups, Uniforms, Custom Jerseys, Tees, Embroidery | GTM Sportswear";
         }
-
-        public void SelectCheerleading(string choice)
-        {
-            cheerleading.Click();
-            var link = Browser.Driver.FindElement(By.LinkText(choice));
-            link.Click();
-        }
-
     }
 }

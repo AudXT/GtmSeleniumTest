@@ -29,6 +29,46 @@ namespace GtmSeleniumFramework.Pages
                 return cheerPage;
             }
         }
+
+        public static SearchResultsPage SearchResultPage
+        {
+            get
+            {
+                var searchPage = new SearchResultsPage();
+                PageFactory.InitElements(Browser.Driver, searchPage);
+                return searchPage;
+            }
+        }
+
+        public static ProductPage ProductPage
+        {
+            get
+            {
+                var productPage = new ProductPage();
+                PageFactory.InitElements(Browser.Driver, productPage);
+                return productPage;
+            }
+        }
+
+        public static CartPage CartPage
+        {
+            get
+            {
+                var cartPage = new CartPage();
+                PageFactory.InitElements(Browser.Driver, cartPage);
+                return cartPage;
+            }
+        }
+
+        public static CheckoutPage CheckoutPage
+        {
+            get
+            {
+                var checkoutPage = new CheckoutPage();
+                PageFactory.InitElements(Browser.Driver, checkoutPage);
+                return checkoutPage;
+            }
+        }
     }
 
 }

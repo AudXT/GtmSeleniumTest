@@ -49,6 +49,7 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Smoke\BlankItemNewAccount.cs" />
     <Compile Include="CheerleadingPageTest.cs" />
     <Compile Include="TestBase.cs" />
     <Compile Include="FrameworkTest.cs" />

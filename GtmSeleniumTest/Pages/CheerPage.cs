@@ -6,12 +6,6 @@ namespace GtmSeleniumFramework.Pages
 {
     public class CheerPage
     {
-        [FindsBy(How = How.CssSelector, Using = "#ctl00_ContentPlaceHolder1_divCategoryContainer > div:nth-child(1) > article > h1")]
-        private IWebElement header;
-        public string Header
-        {
-            get { return header.Text; }
-        }
 
         public bool IsAtCheerleading()
         {

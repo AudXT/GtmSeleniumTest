@@ -55,10 +55,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\CheckoutPage.cs" />
     <Compile Include="Pages\CheerPage.cs" />
-    <Compile Include="Pages\ChromeBrowser.cs" />
+    <Compile Include="Pages\BrowserChrome.cs" />
     <Compile Include="Pages\Browser.cs" />
     <Compile Include="Pages\GtmSportswearBasePage.cs" />
+    <Compile Include="Pages\ProductPage.cs" />
+    <Compile Include="Pages\CartPage.cs" />
+    <Compile Include="Pages\SearchResultsPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\Pages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

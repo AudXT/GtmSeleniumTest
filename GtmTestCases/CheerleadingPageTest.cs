@@ -17,7 +17,7 @@ namespace GtmTestCases
         private void DoTestProcedure()
         {
             Pages.HomePage.Goto();
-            Pages.HomePage.SelectCheerleading("ALL CHEERLEADING");
+            Pages.HomePage.ToolBar.SelectCheerleading("ALL CHEERLEADING");
             Assert.IsTrue(Pages.CheerPage.IsAtCheerleading(), "Not at cheerleading page");
         }
     }
